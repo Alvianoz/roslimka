@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohis SMK N 5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      section {
+        height: auto;
+        min-height: 100vh;
+        background-color: lightgray;
+      }
+      #hero {
+        background: url(background4.jpeg) no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+      }
+
+      .profile-img {
+        width: 400px;
+        height: 400px;
+      }
+      .hero-text {
+        text-align: left;
+        color: white;
+        
+      }
+      .hero-judul {
+        font-size: 58px;
+        font-weight: 700;
+      }
+      .hero-parag {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      body {
+        background-color: whitesmoke;
+      }
+
+      #news {
+        background-color: whitesmoke;
+      }
+
+      .contact .rower {
+        display: flex;
+        margin-top: 2rem;
+      }
+
+      .contact .rower .map {
+        flex: 1 1 45rem;
+        width: "100%";
+        object-fit: cover;
+      }
+
+      .contact .rower form {
+        flex: 1 1 45rem;
+        padding: 5rem 2rem;
+        text-align: center;
+      }
+
+      .contact .rower form .input-group {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        padding-left: 2rem;
+      }
+
+      .contact .rower form .input-group input {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.7rem;
+        background: none;
+        color: #222;
+      }
+
+      .contact .rower form .btn {
+        font-family: "Poppins", sans-serif;
+        margin-top: 3rem;
+        display: inline-block;
+        font-size: 1.7rem;
+        color: #fff;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+
+      .sosmed {
+        margin-top: 24px;
+      }
+
+      .judul {
+        margin: 36px;
+      }
+
+      @media (max-width: 768px) {
+        .hero-container {
+          flex-direction: column;
+          gap: 36px;
+        }
+        .rower {
+          flex-direction: column;
+        }
+
+        .contact .rower .map {
+          height: 0;
+        }
+
+        .contact .rower form {
+          padding-top: 0;
+        }
+        .profile-img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="rohis.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          Roslimka
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">Kegiatan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-container">
+        <img src="rohis.png" alt="Profile" class="profile-img" />
+        <div class="hero-text">
+          <h1 class="hero-judul">Rohis SMK N 5 Surakarta</h1>
+          <p class="hero-parag">Tempat memperbanyak ilmu dan pengalaman rohani Islam dengan menyenangkan dan interaktif.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 d-flex align-items-center">
+      <div class="container">
+        <h2 class="text-center judul">Tentang Ekskul Rohis</h2>
+        <p class="text-center">
+          Kegiatan ekstrakurikuler Rohis (Rohani Islam) di SMK Negeri 5
+          Surakarta merupakan salah satu wadah bagi siswa untuk mengembangkan
+          pemahaman dan pengamalan ajaran agama Islam secara lebih mendalam.
+          Kegiatan ini tidak hanya mengedepankan aspek keagamaan, tetapi juga
+          bertujuan untuk membentuk karakter siswa yang berakhlak mulia,
+          disiplin, dan bertanggung jawab. Beberapa kegiatan yang rutin
+          dilaksanakan antara lain pengajian, doa bersama, kajian kitab, dan
+          pelatihan kepemimpinan berbasis nilai-nilai Islami. Rohis juga sering
+          mengadakan berbagai kegiatan sosial seperti bakti sosial, yang
+          bertujuan untuk menumbuhkan rasa empati dan kepedulian terhadap
+          sesama.
+        </p>
+        <p class="text-center">
+          Selain itu, Rohis SMK Negeri 5 Surakarta juga aktif dalam
+          menyelenggarakan berbagai lomba dan kegiatan yang melibatkan siswa
+          dari berbagai sekolah. Di antaranya adalah lomba tahfidz Al-Qur'an,
+          lomba pidato agama, dan dakwah kreatif.
+        </p>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="" id="news">
+        <div class="container-md">
+            <h2 class="text-center judul">Kegiatan</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="kegiatan1.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Hadrah</h5>
+                    <p class="card-text">
+                      Hadrah merupakan kegiatan kelompok yang menampilkan irama dzikir dan shalawat sebagai bentuk pujian kepada Allah
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="kegiatan2.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Berbagi Takjil</h5>
+                    <p class="card-text">
+                      Berbagi takjil dilakukan untuk memberi kebahagiaan kepada sesama, terutama bagi yang berbuka puasa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="kegiatan3.jpeg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Makan Bersama</h5>
+                    <p class="card-text">
+                      Makan bersama mengeratkan tali persaudaraan dan menciptakan kebersamaan antar anggota ekstrakulikuler
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="kegiatan4.jpeg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Hari Besar Islam</h5>
+                    <p class="card-text">
+                      Hari besar Islam, seperti Idul Fitri dan Idul Adha, merupakan momen penuh berkah untuk merayakan kemenangan dan berbagi kebahagiaan
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="kegiatan5.jpeg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Lomba Rohani Islam</h5>
+                    <p class="card-text">
+                      Pada menjelang hari besar Islam, akan diadakan berbagai lomba rohani Islam seperti lomba azan, kothbah, baca Al-Quran, dan lain-lain
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="kegiatan6.jpeg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Baca Tafsir Al-Quran</h5>
+                    <p class="card-text">
+                      Membaca Al-Quran bersama dan juga menafsirkan makna dan arti dari tiap-tiap ayat dalam surat pada Al-Quran.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5 d-flex align-items-center">
+      <div class="container text-center d-flex flex-column contact">
+        <h2>Kontak Kami</h2>
+        <div class="rower">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.201825262507!2d110.79478861016074!3d-7.5529588745442515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a14257d546c99%3A0xd7caf9142b4a2170!2sSMK%20Negeri%205%20Surakarta!5e0!3m2!1sid!2sid!4v1722948089112!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+          ></iframe>
+
+          <form class="contact-form" onsubmit="sendMessage(event)">
+            <div class="input-group">
+              <input type="text" id="name" placeholder="Nama" required />
+            </div>
+            <div class="input-group">
+              <input type="text" id="class" placeholder="Kelas" required />
+            </div>
+            <div class="input-group">
+              <input type="text" id="message" placeholder="Pesan" required />
+            </div>
+            <button class="btn btn-dark" type="submit">Kirim pesan</button>
+          </form>
+        </div>
+        <p class="sosmed">Ikuti kami di sosial media:</p>
+        <div
+          class="d-flex flex-sm-row flex-column align-items-center justify-content-center"
+        >
+          <a href="https://www.instagram.com/roslimska_official?igsh=bWZiMDB1aXMwcnU2" target="_blank" class="btn btn-lg btn-dark m-2"
+            ><i class="fab fa-instagram"></i> Instagram</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 Rohis SMK N 5 Surakarta | All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      function sendMessage(event) {
+        event.preventDefault();
+        let name = document.getElementById("name").value;
+        let className = document.getElementById("class").value;
+        let message = document.getElementById("message").value;
+        let phoneNumber = "6283843836165";
+        let whatsappUrl = `https://wa.me/${phoneNumber}?text=Nama: ${name}%0AKelas: ${className}%0APesan: ${message}`;
+        window.open(whatsappUrl, "_blank");
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
